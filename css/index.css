@@ -1,32 +1,41 @@
-.inline-block{
-    display:inline-block;
-    vertical-align:top;
+body{
+    font-family: 'Ubuntu', sans-serif;
 }
-.logo{
-    width:23%;
-    padding:1%;
+.primaryNav{
+    position:fixed;
     text-align:center;
+    border:1px solid black;
+    top:0px;
+    right:0px;
+    width:66%;
+    height:5%;
+    background-color:white;
 }
-nav{
-    width:73%;
-    padding:1%;
+#notNav{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 2fr;
+    grid-template-areas:
+    "sideBar cardArea cardArea"
+    "sideBar cardArea cardArea"
+    "sideBar cardArea cardArea"
 }
-ul{
-    width:50%;
-    margin-left:auto;
+#sideBar{
+    background-color:#5e6269;
+    grid-area:sideBar;
 }
-.heroImg{
-    height:600px;
-    padding:25px;
+.cardArea{
+    grid-area:cardArea;
+
 }
-.content{
-    width:500px;
-    margin:0 auto;
+.card{
+    background-color:white;
 }
-footer{
-    background-color:#373738;
-}
-.footnav{
+.cardImage{
     display:inline-block;
-    vertical-align:top;
+
+}
+.cardTitle{
+    display:inline-block;
+
 }
